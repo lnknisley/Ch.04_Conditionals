@@ -62,7 +62,7 @@ while True:
         points += 1
     else:
         print("Watch the language, Marseille was the first winner of the UEFA Champions League, the renamed competition succeeding the European Cup")
-    guess = input("8. True or False! Punchcards were the first form of software storage")
+    guess = input("8. True or False! Punchcards were the first form of software storage\n")
     if guess.lower() == "true":
         print("Spot on, Punchcards were the first and primary way to store computer data until the popularization of the floppy disk")
         points += 1
@@ -86,6 +86,7 @@ while True:
             print("Off by a smidge, the current stable release of Python 3 is 3.12.7 and 3.13 will release in a few days")
     except ValueError:
         print("I'm done with you, start from scratch")
+        points -= points
     guess = input("11. What was the first programming high-level language?\n")
     if guess.lower() == "fortran":
         print("Brilliant! Fortran was released in 1957 as the very first human-readable programming language")
@@ -96,23 +97,33 @@ while True:
 
     grade_input = points / 11
 
-    if grade_input >= 90:
+    if grade_input >= 0.9:
         letter = "A"
         print("Your grade:", letter)
         print("You looked at the code didn\'t you?")
-    elif grade_input >= 75:
+        break
+    elif grade_input >= 0.75:
         letter = "B"
         print("Your grade:", letter)
         print("Great work")
-    elif grade_input >= 60:
+        break
+    elif grade_input >= 0.6:
         letter = "C"
         print("Your grade:", letter)
         print("Better than expected")
-    elif grade_input >= 45:
+        break
+    elif grade_input >= 0.45:
         letter = "D"
         print("Your grade:", letter)
         print("Not horrible")
+        break
+    elif grade_input <= 0:
+        letter = "Z-"
+        print("Your grade:", letter)
+        print("How on earth did you get negative? Start over and you better not see this again")
     else:
         letter = "F"
         print("Your final grade:", letter)
         print("Bruh, that skull must be entirely occupied by echos")
+        break
+
