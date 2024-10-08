@@ -60,11 +60,11 @@
    user_input = input("Choose a character?")
    sensitivity = 0
 
-   if user_input == A:
+   if user_input.lower() == A.lower() or user_input.lower() == "a":
        sensitivity = 1000
-   elif user_input == B:
+   elif user_input.lower() == B.lower()  or user_input.lower() == "b":
        sensitivity = 900
-   elif user_input == C:
+   elif user_input.lower() == C.lower()  or user_input.lower() == "c":
        sensitivity = 0
    else:
        print("Not a choice!")
