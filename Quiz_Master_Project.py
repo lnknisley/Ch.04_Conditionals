@@ -120,7 +120,7 @@ while True:
     elif grade_input <= 0:
         letter = "Z-"
         print("Your grade:", letter)
-        print("How on earth did you get negative? Start over and you better not see this again")
+        print("How on earth did you get negative right? Start the quiz over and you better not see this again")
     else:
         letter = "F"
         print("Your final grade:", letter)
