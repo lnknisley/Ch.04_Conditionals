@@ -42,13 +42,12 @@ while True:
         points -= 1
     guess = input("5. What book (which has been adapted into three movies) has been described by many as Star Wars before Star Wars?\n")
     if guess.lower() == "dune":
-        print("Wise one you are, Frank Herbert's Dune (1961-2) has been routinely called the Star Wars before Star Wars since 1977 due its immense influence on the space franchise with it's use of then new sand-born rebelion, autocratic space empires, and planetary fast travel just to name a few")
+        print("Wise one you are, Frank Herbert's Dune (1965) has been routinely called the Star Wars before Star Wars since 1977 due its immense influence on the space franchise with it's use of then new sand-born rebelion, autocratic space empires, and planetary fast travel just to name a few")
         points += 1
     else:
-        print("Unlucky, Frank Herbert's Dune (1961-2) has been routinely called the Star Wars before Star Wars since 1977 due its immense influence on the space franchise with it's use of then new sand-born rebelion, autocratic space empires, and planetary fast travel just to name a few")
-    print("Welcome to my humble quiz\nLet's hope you get more than two right")
+        print("Unlucky, Frank Herbert's Dune (1965) has been routinely called the Star Wars before Star Wars since 1977 due its immense influence on the space franchise with it's use of then new sand-born rebelion, autocratic space empires, and planetary fast travel just to name a few")
     try:
-        guess = int(input("6. In what year did the Americans get their name?\n"))
+        guess = int(input("6. In what year did the Americas get their name?\n"))
         if guess == 1507:
             print("Nice, some German bloke named the continent America in 1507 after Amerigo Vespucci")
             points += 1
